@@ -1,0 +1,579 @@
+/*  -------------------------------  Global Style   ---------------------------------------- */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  /* height: 1000vh; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  /* flex-wrap: wrap; */
+}
+
+/*  -------------------------------  Custom Style   ---------------------------------------- */
+.span-color {
+  color: #7ea4eb;
+}
+
+p {
+  opacity: 0.9;
+}
+
+.show {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+/* ------------------------------------ Header Style --------------------------------------- */
+header .top-header {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+header .top-header p span {
+  font-size: 0.8rem;
+}
+
+header .top-header h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 4px 0;
+}
+
+header .top-header i {
+  color: royalblue;
+}
+
+header .top-header .phone,
+header .top-header .email,
+header .top-header .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header .top-header .phone span,
+header .top-header .email span,
+header .top-header .icons span {
+  padding: 4px;
+}
+
+header .top-header .email span,
+header .top-header .email h4,
+header .top-header .email p {
+  padding: 4px;
+}
+
+header .top-header .email p span {
+  color: #aaa;
+  font-size: 1rem;
+}
+
+header .top-header .email p span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #35e8ee;
+}
+
+header .top-header .icons i {
+  color: #fff;
+  padding: 6px;
+  -webkit-transition: ease 0.7s background-color;
+  transition: ease 0.7s background-color;
+}
+
+header .top-header .icons i:hover {
+  background-color: #3c3cd4;
+}
+
+/* ------------------------------------ Nav Style  --------------------------------------- */
+nav {
+  background-color: #fff;
+  padding: 0 !important;
+  margin: 0 !important;
+  z-index: 5555;
+}
+
+nav #active {
+  color: #7d7de0;
+}
+
+nav .navbar-collapse ul li,
+nav .links ul li {
+  list-style-type: none;
+  padding: 0 10px;
+}
+
+nav .navbar-collapse ul li a,
+nav .links ul li a {
+  text-decoration: none;
+  color: #999595;
+  font-weight: 800;
+  font-size: 0.8rem;
+}
+
+nav .navbar-collapse ul li a:hover,
+nav .links ul li a:hover {
+  color: #615b5b;
+}
+
+nav .awesome h4 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+nav .awesome a {
+  text-decoration: none;
+  color: #999595;
+}
+
+/* ------------------------------------ Home  Style --------------------------------------- */
+#home {
+  color: #fff;
+  text-align: center;
+  height: 85vh;
+  background-image: url("../images/home-bg.jpg");
+  background-size: 100% 100%;
+  padding: 70px 0;
+}
+
+#home .container {
+  width: 60%;
+  text-align: left;
+}
+
+#home .container p {
+  font-size: 4.5rem;
+  font-weight: 400;
+}
+
+#home .container button {
+  padding: 20px;
+  background-color: inherit;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  border: 1px solid #eee;
+  -webkit-transition: ease background-color 0.5s;
+  transition: ease background-color 0.5s;
+}
+
+#home .container button:hover {
+  background-color: #7ea4eb;
+}
+
+/* ------------------------------------ Section About Style --------------------------------------- */
+#about {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  background-color: #302f2f;
+  color: #fff;
+}
+
+#about h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 20px 0;
+}
+
+#about i {
+  padding: 18px;
+  font-size: 1.4rem;
+  font-weight: 900;
+  border: 1px solid #fff;
+}
+
+#about p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding-left: 80px;
+}
+
+#about .i-phone {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px;
+}
+
+#about .i-phone h4 {
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+/* ------------------------------------ Team section Style --------------------------------------- */
+#team {
+  background-color: #302f2f;
+  color: #fff;
+}
+
+#team h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#team .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#team .row .card {
+  width: 23%;
+  background-color: #494949;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  cursor: pointer;
+}
+
+#team .row .card img,
+#team .row .card .img-holder {
+  width: 100%;
+}
+
+#team .row .card .text {
+  color: #fff;
+  padding: 15px;
+}
+
+#team .row .card .text h4 {
+  padding: 15px 0;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+#team .row .card .text p {
+  padding: 15px 0;
+}
+
+#team .row .card:hover {
+  opacity: 0.5;
+}
+
+/* ------------------------------------ Service section Style --------------------------------------- */
+#service {
+  background-color: #302f2f;
+  color: #fff;
+}
+
+#service h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 50px 0;
+}
+
+#service .static {
+  background-color: #707070;
+}
+
+#service .row .content {
+  padding: 50px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+#service .row .content span i {
+  border: 1px solid #fff;
+  padding: 25px;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#service .row .content h5 {
+  padding: 25px 0;
+  color: #7ea4eb;
+  font-size: 1.1rem;
+}
+
+#service .row .content p {
+  line-height: 20px;
+  font-weight: 300;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+#service .row .content:hover {
+  background-color: #707070;
+}
+
+/* ------------------------------------ Portfolio section Style --------------------------------------- */
+#portfolio {
+  background-color: #383737;
+}
+
+#portfolio h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+#portfolio .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+#portfolio .row .card {
+  overflow: hidden;
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+}
+
+#portfolio .row .card img {
+  width: 100%;
+  height: 250px;
+}
+
+#portfolio .row .card .project-text {
+  position: absolute;
+  padding: 15px;
+  /* top: 0; */
+  top: 100%;
+  color: #fff;
+  height: 100%;
+  visibility: hidden;
+  -webkit-transition: ease all 1s;
+  transition: ease all 1s;
+}
+
+#portfolio .row .card .project-text h5 {
+  font-size: 1.1rem;
+}
+
+#portfolio .row .card .project-text p {
+  padding: 20px 0;
+}
+
+#portfolio .row .card .project-text button {
+  padding: 10px 25px;
+  border: 1px solid #fff;
+  background-color: inherit;
+  color: #fff;
+  font-size: 1.1rem;
+  -webkit-transition: background-color ease 0.8s;
+  transition: background-color ease 0.8s;
+}
+
+#portfolio .row .card .project-text button:hover {
+  background-color: #7ea4eb;
+}
+
+#portfolio .row .card:hover .project-text {
+  visibility: visible;
+  top: 0;
+  opacity: 0.8;
+  background-color: #081c20;
+}
+
+/* ------------------------------------ Contact section Style --------------------------------------- */
+#contact {
+  background-color: #292929;
+  color: #fff;
+}
+
+#contact h3 {
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#contact i,
+#contact p {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+#contact i {
+  border: 1px solid #fff;
+  padding: 15px;
+  margin: 5px;
+}
+
+#contact .hover-icon {
+  -webkit-transition: 0.8s all ease;
+  transition: 0.8s all ease;
+}
+
+#contact .hover-icon:hover {
+  background-color: rgba(204, 0, 153, 0.712);
+}
+
+#contact .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#contact .row .left-content,
+#contact .row .right-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contact .row .left-content input {
+  color: #fff;
+  border-radius: 3px;
+  margin: 15px 0;
+  padding: 10px;
+  background-color: inherit;
+  border: 1px solid #5e5edf;
+}
+
+#contact .row .left-content textarea {
+  border-radius: 3px;
+  margin: 15px 0;
+  height: 100px;
+  background-color: inherit;
+  border: 1px solid #5e5edf;
+}
+
+#contact .row .left-content button {
+  background-color: #4a81e7;
+  border: 1px solid #4a81e7;
+  border-radius: 3px;
+  padding: 15px;
+  color: #fff;
+  -webkit-transition: ease 0.6s background-color;
+  transition: ease 0.6s background-color;
+}
+
+#contact .row .left-content button:hover {
+  background-color: inherit;
+}
+
+#contact .row .right-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 25px;
+}
+
+#contact .row .right-content p {
+  padding: 15px 0;
+}
+
+#contact .line {
+  margin: 20px 0;
+  background-color: #fff;
+  opacity: 0.7;
+  height: 1px;
+}
+
+#contact .after-line {
+  padding: 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#contact .after-line h4 {
+  font-size: 1.1rem;
+  display: inline;
+}
+
+#contact .after-line i {
+  border: 1px solid #fff;
+  padding: 7px;
+  display: inline;
+  -webkit-transition: 0.5s background-color ease;
+  transition: 0.5s background-color ease;
+  margin: 0 12px;
+}
+
+#contact .after-line i:hover {
+  background-color: #098a8f;
+}
+
+/* ------------------------------------ Footer Section Style --------------------------------------- */
+footer {
+  text-align: center;
+  padding: 25px 0;
+  color: #fff;
+  background-color: #3f3434;
+}
+/*# sourceMappingURL=index.css.map */

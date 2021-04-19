@@ -1,0 +1,18 @@
+
+#home #txtsize{
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+#about .i-phone {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+#about .i-phone  h4 {
+font-size: 1.1rem;
+padding-top: 15px;
+padding-left: 20px;
+}

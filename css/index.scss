@@ -1,0 +1,497 @@
+/*  -------------------------------  Global Style   ---------------------------------------- */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  /* height: 1000vh; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+}
+
+/*  -------------------------------  Custom Style   ---------------------------------------- */
+.span-color {
+  color: rgb(126, 164, 235);
+}
+
+p {
+  opacity: 0.9;
+}
+
+.show {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* ------------------------------------ Header Style --------------------------------------- */
+header {
+  .top-header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    p {
+      span {
+        font-size: 0.8rem;
+      }
+    }
+    h4 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 4px 0;
+    }
+    i {
+      color: royalblue;
+    }
+    .phone,
+    .email,
+    .icons {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      //   margin: 10px 0;
+      span {
+        padding: 4px;
+      }
+    }
+    .email {
+      span,
+      h4,
+      p {
+        padding: 4px;
+      }
+      p {
+        span {
+          color: #aaa;
+          font-size: 1rem;
+          &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+            color: rgb(53, 232, 238);
+          }
+        }
+      }
+    }
+    .icons {
+      i {
+        color: #fff;
+        padding: 6px;
+        transition: ease 0.7s background-color;
+
+        &:hover {
+          // color: rgb(60, 60, 212);
+          background-color: rgb(60, 60, 212);
+          // border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+/* ------------------------------------ Nav Style  --------------------------------------- */
+
+nav {
+  // position: sticky;
+  // top: 0;
+  background-color: #fff;
+  // width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  z-index: 5555;
+  #active {
+    color: rgb(125, 125, 224);
+  }
+
+  .navbar-collapse,
+  .links {
+    // padding: 20px 0;
+    ul {
+      // display: flex;
+      // justify-content: start;
+      // flex-direction: row;
+      // padding-left: 250px;
+      li {
+        list-style-type: none;
+        padding: 0 10px;
+        a {
+          text-decoration: none;
+          color: rgb(153, 149, 149);
+          font-weight: 800;
+          font-size: 0.8rem;
+          &:hover {
+            color: #615b5b;
+          }
+        }
+      }
+    }
+  }
+  .awesome {
+    h4 {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+    a {
+      text-decoration: none;
+      color: rgb(153, 149, 149);
+    }
+  }
+}
+/* ------------------------------------ Home  Style --------------------------------------- */
+
+#home {
+  color: #fff;
+  text-align: center;
+  height: 85vh;
+  background-image: url("../images/home-bg.jpg");
+  background-size: 100% 100%;
+  //   background: cover;
+  padding: 70px 0;
+  .container {
+    width: 60%;
+    text-align: left;
+    p {
+      font-size: 4.5rem;
+      font-weight: 400;
+    }
+    button {
+      padding: 20px;
+      background-color: inherit;
+      color: #fff;
+      font-weight: 700;
+      font-size: 1rem;
+      border: 1px solid #eee;
+      transition: ease background-color 0.5s;
+      &:hover {
+        background-color: rgb(126, 164, 235);
+      }
+    }
+  }
+}
+
+/* ------------------------------------ Section About Style --------------------------------------- */
+
+#about {
+  box-sizing: border-box;
+  text-align: center;
+  background-color: rgb(48, 47, 47);
+  color: #fff;
+  //   height: 70vh;
+  //   padding: 50px 0;
+  h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 20px 0;
+  }
+  i {
+    padding: 18px;
+    font-size: 1.4rem;
+    font-weight: 900;
+    border: 1px solid #fff;
+  }
+  p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding-left: 80px;
+  }
+  .i-phone {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    h4 {
+      padding-top: 15px;
+      padding-left: 20px;
+    }
+  }
+}
+
+/* ------------------------------------ Team section Style --------------------------------------- */
+
+#team {
+  background-color: rgb(48, 47, 47);
+  color: #fff;
+  //   padding: 90px 0;
+  h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    // padding-bottom: 50px;
+  }
+  .row {
+    display: flex;
+    justify-content: space-around;
+    // flex-basis: 25%;
+    .card {
+      width: 23%;
+      background-color: rgb(73, 73, 73);
+      // margin: 5px;
+      transition: 0.5s all ease;
+      cursor: pointer;
+      img,
+      .img-holder {
+        width: 100%;
+      }
+      .text {
+        color: #fff;
+        padding: 15px;
+        h4 {
+          padding: 15px 0;
+          font-weight: 500;
+          font-size: 1.2rem;
+        }
+        p {
+          padding: 15px 0;
+        }
+      }
+      &:hover {
+        opacity: 0.5;
+        //  transform: translateY(-20px);
+      }
+    }
+  }
+}
+
+/* ------------------------------------ Service section Style --------------------------------------- */
+
+#service {
+  background-color: rgb(48, 47, 47);
+  color: #fff;
+  //   padding: 90px 0;
+  h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 50px 0;
+  }
+  .static {
+    background-color: rgb(112, 112, 112);
+  }
+  .row {
+    .content {
+      padding: 50px 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transition: all ease 0.5s;
+      span {
+        i {
+          border: 1px solid #fff;
+          padding: 25px;
+          font-size: 2.5rem;
+          margin-bottom: 20px;
+        }
+      }
+      h5 {
+        padding: 25px 0;
+        color: rgb(126, 164, 235);
+        font-size: 1.1rem;
+      }
+      p {
+        line-height: 20px;
+        font-weight: 300;
+        font-size: 0.9rem;
+        opacity: 0.9;
+      }
+
+      &:hover {
+        background-color: rgb(112, 112, 112);
+      }
+    }
+  }
+}
+
+/* ------------------------------------ Portfolio section Style --------------------------------------- */
+
+#portfolio {
+  background-color: rgb(56, 55, 55);
+  //   padding: 90px 0;
+  h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    .card {
+      overflow: hidden;
+      border: none;
+      //   flex-basis: 25%;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      transition: 1s all ease;
+      img {
+        width: 100%;
+        height: 250px;
+      }
+      .project-text {
+        position: absolute;
+        padding: 15px;
+        /* top: 0; */
+        top: 100%;
+        color: #fff;
+        height: 100%;
+        visibility: hidden;
+
+        transition: ease all 1s;
+        h5 {
+          font-size: 1.1rem;
+        }
+        p {
+          padding: 20px 0;
+        }
+        button {
+          padding: 10px 25px;
+          border: 1px solid #fff;
+          background-color: inherit;
+          color: #fff;
+          font-size: 1.1rem;
+          transition: background-color ease 0.8s;
+          &:hover {
+            background-color: rgb(126, 164, 235);
+            // color: red;
+          }
+        }
+      }
+      &:hover .project-text {
+        visibility: visible;
+        top: 0;
+        opacity: 0.8;
+        background-color: rgb(8, 28, 32);
+      }
+    }
+  }
+}
+
+/* ------------------------------------ Contact section Style --------------------------------------- */
+
+#contact {
+  background-color: rgb(41, 41, 41);
+  color: #fff;
+  //   padding: 100px 0;
+  h3 {
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  i,
+  p {
+    display: inline-block;
+    padding: 0 15px;
+  }
+  i {
+    border: 1px solid #fff;
+    padding: 15px;
+    margin: 5px;
+  }
+  .hover-icon {
+    transition: 0.8s all ease;
+    &:hover {
+      // color: green;
+      background-color: rgba(204, 0, 153, 0.712);
+    }
+  }
+  .row {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .left-content,
+    .right-content {
+      display: flex;
+      flex-direction: column;
+      //   flex-basis: 49%;
+    }
+    .left-content {
+      input {
+        color: #fff;
+        border-radius: 3px;
+        margin: 15px 0;
+        padding: 10px;
+        background-color: inherit;
+        border: 1px solid rgb(94, 94, 223);
+      }
+      textarea {
+        border-radius: 3px;
+        margin: 15px 0;
+        height: 100px;
+        background-color: inherit;
+        border: 1px solid rgb(94, 94, 223);
+      }
+      button {
+        background-color: rgb(74, 129, 231);
+        border: 1px solid rgb(74, 129, 231);
+        border-radius: 3px;
+        padding: 15px;
+        color: #fff;
+        transition: ease 0.6s background-color;
+        &:hover {
+          background-color: inherit;
+        }
+      }
+    }
+    .right-content {
+      display: flex;
+      flex-direction: column;
+      padding-top: 25px;
+      p {
+        padding: 15px 0;
+      }
+    }
+  }
+  .line {
+    margin: 20px 0;
+    background-color: #fff;
+    opacity: 0.7;
+    height: 1px;
+  }
+  .after-line {
+    padding: 5px 0;
+    display: flex;
+    h4 {
+      font-size: 1.1rem;
+      display: inline;
+    }
+    i {
+      border: 1px solid #fff;
+      padding: 7px;
+      display: inline;
+      transition: 0.5s background-color ease;
+      margin: 0 12px;
+      &:hover {
+        background-color: rgb(9, 138, 143);
+      }
+    }
+  }
+}
+/* ------------------------------------ Footer Section Style --------------------------------------- */
+
+footer {
+  text-align: center;
+  padding: 25px 0;
+  color: #fff;
+  background-color: rgb(63, 52, 52);
+}
